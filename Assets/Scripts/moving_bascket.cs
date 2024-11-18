@@ -15,8 +15,6 @@ public class moving_bascket : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
-        
     }
 
     // Update is called once per frame
@@ -31,17 +29,6 @@ public class moving_bascket : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(move * speed, rb.velocity.y);
-
-
         }
-
-
-
-
-
-
-
-
-
     }
 }

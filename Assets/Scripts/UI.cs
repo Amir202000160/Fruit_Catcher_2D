@@ -33,7 +33,7 @@ public class UI : MonoBehaviour
     }
     public void ScoreADD()
     {
-        SCORE++;
+        SCORE=SCORE+1;
         scoreboard.text = SCORE.ToString();
     }
     public void NEWGAME()

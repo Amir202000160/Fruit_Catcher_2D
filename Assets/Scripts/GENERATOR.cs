@@ -6,7 +6,7 @@ public class GENERATOR : MonoBehaviour
 {
     // Start is called before the first frame update
     float timer = 1;
-    [SerializeField]     GameObject[] gm;
+    [SerializeField] GameObject[] gm;
     void Start()
     {
         
