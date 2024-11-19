@@ -10,14 +10,17 @@ public class UI : MonoBehaviour
     
     public int SCORE;
     public bool GameOver;
+    public bool IsStart;
     public Transform title;
     public Text scoreboard;
-   
-    
+    public GameObject StartPanel;
+
+
     void Start()
     {
         SCORE = 0;
         GameOver = false;
+        IsStart = false;
         scoreboard.text = "0";
     }
 
@@ -39,5 +42,14 @@ public class UI : MonoBehaviour
     public void NEWGAME()
     {
         SceneManager.LoadScene(0);
+    }
+    public void EXIT()
+    {
+        Application.Quit();
+    }
+    public void StartNewGame()
+    {
+        StartPanel.gameObject.SetActive(false);
+        IsStart = true;
     }
 }
